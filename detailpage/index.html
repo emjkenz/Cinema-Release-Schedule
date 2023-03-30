@@ -1,38 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Movie Detail Page</title>
-        <script src="assests/js/script.js"></script>
-        <script src="assests/css/style.css"></script>
-        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    </head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Detail Page</title>
+    <script src="/assests/js/movie-details.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation Bar -->
-<nav>
-    <div class="nav-wrapper">
+    <nav>
+      <div class="nav-wrapper">
         <a href="#" class="brand-logo">My Website</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="/">Home</a></li>
-            <li><a href="/nowshowing">Now Showing</a></li>
-            <li><a href="/comingsoon">Coming Soon</a></li>
-            <li><a href="/moviesearch">Movie Search</a></li>
-            <li><a href="/cinemasearch">Cinema Search</a></li>
-            <li><a href="/detailpage">Movie Detail Page</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/nowshowing">Now Showing</a></li>
+          <li><a href="/comingsoon">Coming Soon</a></li>
+          <li><a href="/moviesearch">Movie Search</a></li>
+          <li><a href="/cinemasearch">Cinema Search</a></li>
+          <li><a href="/detailpage">Movie Detail Page</a></li>
         </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1>Movie Detail Page</h1>
     </div>
-</nav>
 
-<div class="container">
-    <h1>Movie Detail Page</h1>
-  </div>
+    <div class="container">
+      <h1 id="movie-name"></h1>
+      <img id="movie-poster" src="" alt="" />
+      <p id="age-rating"></p>
+      <p id="synopsis"></p>
+      <!-- <video id="movie-trailer" controls>
+        <source src="" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video> -->
+    </div>
 
-<!-- Import Materialize JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
-</body>
+    <!-- Import Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
 </html>
