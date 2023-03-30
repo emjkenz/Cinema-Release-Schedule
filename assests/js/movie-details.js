@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     //   film.film_trailer;
   } else {
     // Redirect back to the main page if no film data is found in localStorage
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
   }
 });
