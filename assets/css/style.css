@@ -51,6 +51,18 @@ nav ul a {
   position: center;
 }
 
+.breadcrumbs {
+  margin: 10px;
+}
+.breadcrumb {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.breadcrumb:before {
+  vertical-align: middle;
+}
+
 .website-use {}
 
 .moreinfo {}
