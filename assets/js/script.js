@@ -113,5 +113,5 @@ function carouselNext() {
 document.addEventListener("DOMContentLoaded", loadCarousel);
 $(document).ready(function(){
   var d = new Date();
-  $('#copywrite-date').text(d.getFullYear())
+  $('#copyright-date').text(d.getFullYear())
 })
