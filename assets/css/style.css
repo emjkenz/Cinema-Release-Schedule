@@ -4,23 +4,35 @@
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 1;
-  font-size: 48px; /* Increase the font size to make the arrows bigger */
-  color: rgba(0, 0, 0, 0.6); /* Adjust the color for better visibility */
+  font-size: 48px;
+  /* Increase the font size to make the arrows bigger */
+  color: rgba(0, 0, 0, 0.6);
+  /* Adjust the color for better visibility */
 }
 
 .carousel-prev {
-  left: 15px; /* Adjust the left value to position the arrow closer to the carousel */
+  left: 15px;
+  /* Adjust the left value to position the arrow closer to the carousel */
 }
 
 .carousel-next {
-  right: 15px; /* Adjust the right value to position the arrow closer to the carousel */
+  right: 15px;
+  /* Adjust the right value to position the arrow closer to the carousel */
 }
 
 .carousel:hover .carousel-control {
-  color: rgba(
-    0,
-    0,
-    0,
-    0.8
-  ); /* Adjust the color on hover for better visibility */
+  color: rgba(0,
+      0,
+      0,
+      0.8);
+  /* Adjust the color on hover for better visibility */
 }
+
+/* about us page text boxes */
+.aboutusblurb {
+  position: center;
+}
+
+.website-use {}
+
+.moreinfo {}
