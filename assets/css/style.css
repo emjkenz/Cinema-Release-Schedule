@@ -1,3 +1,21 @@
+* {
+  font-family: 'Bebas Neue', cursive;
+}
+
+.brand-logo,
+.brand-logo img{
+  height: 100%;
+}
+
+.nav-wrapper {
+  background: linear-gradient(to right, #d500f9, #1de9b6);
+  text-shadow: black 1px 1px;
+}
+
+nav ul a {
+  font-size: 1.5rem;
+}
+
 .carousel-control {
   position: absolute;
   top: 50%;
@@ -36,3 +54,10 @@
 .website-use {}
 
 .moreinfo {}
+
+body {
+  background: linear-gradient(to bottom, #89bdf9, #9ef2fc);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
