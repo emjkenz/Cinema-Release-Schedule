@@ -58,9 +58,14 @@ nav ul a {
   height: 100%;
   display: inline-block;
   vertical-align: middle;
+  color: rgba(0,0,0,0.5);
 }
 .breadcrumb:before {
   vertical-align: middle;
+  color: rgba(0,0,0,0.5);
+}
+.breadcrumb:last-child {
+  color: #000;
 }
 
 .website-use {}
@@ -71,5 +76,18 @@ body {
   background: linear-gradient(to bottom, #89bdf9, #9ef2fc);
   background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+body > .container {
+  min-height: 80vh;
+}
+
+.page-footer {
+  /* position: absolute;
+  bottom: 0;
+  width: 100%; */
+  margin-top: 40px;
+  background: linear-gradient(to right, #d500f9, #1de9b6);
+  text-shadow: black 1px 1px;
 }
 
