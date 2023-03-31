@@ -91,3 +91,9 @@ body > .container {
   text-shadow: black 1px 1px;
 }
 
+.film-background {
+  background: url(./assets/images/film-reel.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
