@@ -6,17 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Now Showing</title>
-    <script src="../assets/js/script.js"></script>
-    <script src="../assets/css/style.css"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="/https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="../assets/js/script.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">My Website</a>
+            <a href="../" class="brand-logo"><img src="../assets/images/movie-search-logo.png" alt="My Movie Search" /></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="../">Home</a></li>
                 <li><a href="../nowshowing">Now Showing</a></li>
@@ -30,16 +34,23 @@
     </nav>
 
     <div class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <div class="col s12">
+                <a href="../" class="breadcrumb">Home</a>
+                <a href="./" class="breadcrumb">Now Showing</a>
+            </div>
+        </div>
         <h1>Now Showing</h1>
     </div>
 
-    <button id="nowShowHomeButton" class="nowShowHomeButton">Home</button>
-    <script type="text/javascript">
-        document.getElementById("nowShowHomeButton").onclick = function () {
-            location.href = "http://127.0.0.1:5500/";
-        };
-    </script>
-
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © <span id="copyright-date"></span> The Movie Buffs
+            </div>
+        </div>
+      </footer>
 
     <!-- Import Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

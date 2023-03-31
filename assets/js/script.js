@@ -111,10 +111,7 @@ function carouselNext() {
 }
 
 document.addEventListener("DOMContentLoaded", loadCarousel);
-
-
-<script type="text/javascript">
-  document.getElementById("myButton").onclick = function () {
-    location.href = "http://127.0.0.1:5500/";
-    };
-</script>
+$(document).ready(function(){
+  var d = new Date();
+  $('#copyright-date').text(d.getFullYear())
+})

@@ -6,17 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <script src="../assets/js/script.js"></script>
-    <script src="../assets/css/style.css"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="../assets/js/script.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css"></script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">My Website</a>
+            <a href="../" class="brand-logo"><img src="../assets/images/movie-search-logo.png" alt="My Movie Search" /></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="../">Home</a></li>
                 <li><a href="../nowshowing">Now Showing</a></li>
@@ -30,33 +34,45 @@
     </nav>
 
     <!--style page however you like, I made three classes for text boxes which should both give me plenty of room to write what is needed and have the page full, so when you are beautifying the page, make and place three sections ready for typing please.-->
+    <div class="container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <div class="col s12">
+                <a href="../" class="breadcrumb">Home</a>
+                <a href="./" class="breadcrumb">Cinema Search</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <p class="aboutusblurb">
+                    <h3>weeeeeeeeeeeeeeeeeeeeeeeee</h3>
+                    agasgasgag
+                    asdgsag
+                    asdgsagasg
+                
+                    asdgasgwgr
+                    </p>
+                
+                    <p class="website-use">
+                        Hi Gizmo
+                
+                    </p>
+                
+                    <p class="moreinfo">
+                        Tristan is the best!
+                
+                    </p>
+            </div>
+        </div>
+    </div>
 
-    <p class="aboutusblurb">
-    <h3>weeeeeeeeeeeeeeeeeeeeeeeee</h3>
-    agasgasgag
-    asdgsag
-    asdgsagasg
-
-    asdgasgwgr
-    </p>
-
-    <p class="website-use">
-        Hi Gizmo
-
-    </p>
-
-    <p class="moreinfo">
-        Tristan is the best!
-
-    </p>
-
-    <button id="aboutUsHomeButton" class="aboutUsHomeButton">Home</button>
-    <script type="text/javascript">
-        document.getElementById("aboutUsHomeButton").onclick = function () {
-            location.href = "http://127.0.0.1:5500/";
-        };
-    </script>
-
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © <span id="copyright-date"></span> The Movie Buffs
+            </div>
+        </div>
+    </footer>
 
     <!-- Import Materialize JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
