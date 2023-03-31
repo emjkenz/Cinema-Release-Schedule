@@ -110,8 +110,13 @@ function carouselNext() {
   carouselInstance.next();
 }
 
-document.addEventListener("DOMContentLoaded", loadCarousel);
+if (window.location.pathname === "/") {
+  document.addEventListener("DOMContentLoaded", loadCarousel);
+}
+
 $(document).ready(function(){
   var d = new Date();
   $('#copyright-date').text(d.getFullYear())
+
+  setInterval(carouselNext,3000)
 })
