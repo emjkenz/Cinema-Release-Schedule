@@ -16,6 +16,18 @@ nav ul a {
   font-size: 1.5rem;
 }
 
+.carousel-container { 
+  height: 100vh !important
+}
+
+.carousel {
+  height: 100% !important;
+}
+
+.carousel-item {
+width: 400px !important; height: 400px !important;
+}
+
 .carousel-control {
   position: absolute;
   top: 50%;
