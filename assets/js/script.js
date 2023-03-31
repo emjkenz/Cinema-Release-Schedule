@@ -114,9 +114,11 @@ if (window.location.pathname === "/") {
   document.addEventListener("DOMContentLoaded", loadCarousel);
 }
 
+//Run code on document load
 $(document).ready(function(){
   var d = new Date();
   $('#copyright-date').text(d.getFullYear())
 
+  //Carousel auto feature
   setInterval(carouselNext,3000)
 })
