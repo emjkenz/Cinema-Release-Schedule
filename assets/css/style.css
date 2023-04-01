@@ -47,9 +47,9 @@ nav ul a {
 }
 
 /* about us page text boxes */
-.aboutusblurb {
+p {
   position: center;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .breadcrumbs {
