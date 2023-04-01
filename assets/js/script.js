@@ -116,6 +116,7 @@ if (window.location.pathname === "/") {
 
 //Run code on document load
 $(document).ready(function(){
+  $('.sidenav').sidenav();
   var d = new Date();
   $('#copyright-date').text(d.getFullYear())
 

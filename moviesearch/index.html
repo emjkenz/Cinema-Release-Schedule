@@ -17,10 +17,11 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav>
+     <!-- Navigation Bar -->
+     <nav>
         <div class="nav-wrapper">
             <a href="../" class="brand-logo"><img src="../assets/images/movie-search-logo.png" alt="My Movie Search" /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="../">Home</a></li>
                 <li><a href="../nowshowing">Now Showing</a></li>
@@ -32,6 +33,17 @@
             </ul>
         </div>
     </nav>
+
+    <!--Mobile compatability-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="../">Home</a></li>
+        <li><a href="../nowshowing">Now Showing</a></li>
+        <li><a href="../comingsoon">Coming Soon</a></li>
+        <li><a href="../moviesearch">Movie Search</a></li>
+        <li><a href="../cinemasearch">Cinema Search</a></li>
+        <li><a href="../detailpage">Movie Details</a></li>
+        <li><a href="../about/">About</a></li>
+  </ul>
 
     <div class="container">
         <!-- Breadcrumbs -->

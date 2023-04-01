@@ -17,10 +17,11 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav>
+     <!-- Navigation Bar -->
+     <nav>
         <div class="nav-wrapper">
             <a href="../" class="brand-logo"><img src="../assets/images/movie-search-logo.png" alt="My Movie Search" /></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="../">Home</a></li>
                 <li><a href="../nowshowing">Now Showing</a></li>
@@ -28,10 +29,21 @@
                 <li><a href="../moviesearch">Movie Search</a></li>
                 <li><a href="../cinemasearch">Cinema Search</a></li>
                 <li><a href="../detailpage">Movie Details</a></li>
-                <li><a href="../about/">About</li>
+                <li><a href="../about/">About</a></li>
             </ul>
         </div>
     </nav>
+
+    <!--Mobile compatability-->
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="../">Home</a></li>
+        <li><a href="../nowshowing">Now Showing</a></li>
+        <li><a href="../comingsoon">Coming Soon</a></li>
+        <li><a href="../moviesearch">Movie Search</a></li>
+        <li><a href="../cinemasearch">Cinema Search</a></li>
+        <li><a href="../detailpage">Movie Details</a></li>
+        <li><a href="../about/">About</a></li>
+  </ul>
 
     <!--style page however you like, I made three classes for text boxes which should both give me plenty of room to write what is needed and have the page full, so when you are beautifying the page, make and place three sections ready for typing please.-->
     <div class="container">
