@@ -7,7 +7,12 @@
   height: 100%;
 }
 
-.nav-wrapper {
+
+.sidenav li>a {
+  color: #fff;
+}
+
+.nav-wrapper, .sidenav {
   background: linear-gradient(to right, #d500f9, #1de9b6);
   text-shadow: black 1px 1px;
 }
