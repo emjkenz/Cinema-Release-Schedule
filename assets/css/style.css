@@ -21,17 +21,20 @@ nav ul a {
   font-size: 1.5rem;
 }
 
-.carousel-container { 
-  height: 100vh !important
+@media screen and (min-width:500px){
+  .carousel-container { 
+    height: 100vh !important;
+  }
+  
+  .carousel {
+    height: 100% !important;
+  }
+  
+  .carousel-item {
+    width: 400px !important; height: 400px !important;
+  }
 }
 
-.carousel {
-  height: 100% !important;
-}
-
-.carousel-item {
-width: 400px !important; height: 400px !important;
-}
 
 .carousel-control {
   position: absolute;
@@ -110,11 +113,18 @@ body > .container {
 }
 
 .center-image {
-display: inline-block;
-height: 300px;
+  display: inline-block;
+  height: 300px;
 }
 
 .image-container {
-width: 100%;
-text-align: center;
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (max-width:500px) {
+  .center-image {
+    width: 100%;
+    height: unset !important;
+  }
 }
