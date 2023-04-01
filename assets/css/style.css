@@ -16,7 +16,9 @@ nav ul a {
   font-size: 1.5rem;
 }
 
-.carousel-container {
+.carousel-container { 
+  position: relative;
+  top: -200px;
   height: 100vh !important
 }
 
