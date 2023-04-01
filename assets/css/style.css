@@ -3,7 +3,7 @@
 }
 
 .brand-logo,
-.brand-logo img{
+.brand-logo img {
   height: 100%;
 }
 
@@ -27,7 +27,8 @@ nav ul a {
 }
 
 .carousel-item {
-width: 400px !important; height: 400px !important;
+  width: 400px !important;
+  height: 400px !important;
 }
 
 .carousel-control {
@@ -69,16 +70,19 @@ p {
 .breadcrumbs {
   margin: 10px;
 }
+
 .breadcrumb {
   height: 100%;
   display: inline-block;
   vertical-align: middle;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
+
 .breadcrumb:before {
   vertical-align: middle;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
+
 .breadcrumb:last-child {
   color: #000;
 }
@@ -93,7 +97,7 @@ body {
   min-height: 100vh;
 }
 
-body > .container {
+body>.container {
   min-height: 80vh;
 }
 
@@ -107,11 +111,75 @@ body > .container {
 }
 
 .center-image {
-display: inline-block;
-height: 300px;
+  display: inline-block;
+  height: 300px;
 }
 
 .image-container {
-width: 100%;
-text-align: center;
+  width: 100%;
+  text-align: center;
+}
+
+#all-cinemas ul {
+  width: 100%;
+}
+
+#all-cinemas li {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(73, 86, 161);
+  margin: 5px 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#all-cinemas li a {
+  display: inline-block;
+  color: #fff;
+  transition: 0.3s;
+  vertical-align: middle;
+  font-size: 20px;
+}
+
+#all-cinemas li a:hover {
+  background-color: #000;
+  vertical-align: middle;
+}
+
+/* Movies Page */
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie {
+  width: 30%;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgb(73, 86, 161);
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.movie-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-sessions span {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
 }
