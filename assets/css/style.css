@@ -61,6 +61,7 @@ width: 400px !important; height: 400px !important;
 /* about us page text boxes */
 .aboutusblurb {
   position: center;
+  font-size: 16px;
 }
 
 .breadcrumbs {
@@ -103,3 +104,12 @@ body > .container {
   text-shadow: black 1px 1px;
 }
 
+.center-image {
+display: inline-block;
+height: 300px;
+}
+
+.image-container {
+width: 100%;
+text-align: center;
+}
