@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinema Search</title>
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -14,18 +14,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="../assets/js/script.js"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/village-api.js"></script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <nav>
         <div class="nav-wrapper">
-            <a href="../" class="brand-logo"><img src="../assets/images/movie-search-logo.png" alt="My Movie Search" /></a>
+            <a href="../" class="brand-logo"><img src="../assets/images/movie-search-logo.png"
+                    alt="My Movie Search" /></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="../">Home</a></li>
                 <li><a href="../nowshowing">Now Showing</a></li>
                 <li><a href="../comingsoon">Coming Soon</a></li>
-                <li><a href="../moviesearch">Movie Search</a></li>
                 <li><a href="../cinemasearch">Cinema Search</a></li>
                 <li><a href="../detailpage">Movie Details</a></li>
                 <li><a href="../about/">About</a></li>
@@ -38,7 +39,7 @@
         <div class="breadcrumbs">
             <div class="col s12">
                 <a href="../" class="breadcrumb">Home</a>
-                <a href="./" class="breadcrumb">Cinema Search</a>
+                <a href="../" class="breadcrumb">Cinema Search</a>
             </div>
         </div>
         <h1>Cinema Search</h1>
@@ -46,6 +47,7 @@
         <button class="btn waves-effect waves-light" type="submit" name="action">Search
             <i class="material-icons right">search</i>
         </button>
+        <div id="all-cinemas"></div>
 
     </div>
 
