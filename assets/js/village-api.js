@@ -18,7 +18,7 @@ function getMovieCinemas() {
             var ul = $('<ul></ul>');
             for (let i = 0; i < cinemas.Items.length; i++) {
                 const cinema = cinemas.Items[i];
-                var li = $('<li><span>' + cinema.DisplayName + '</span><a class="search-cinema" href="../moviesearch/?cinemaId=' + cinema.CinemaId +'&cinemaName='+cinema.DisplayName+'">View ></a></li>');
+                var li = $('<li><span>' + cinema.DisplayName + '</span><a class="search-cinema" href="./moviesearch/?cinemaId=' + cinema.CinemaId +'&cinemaName='+cinema.DisplayName+'">View ></a></li>');
                 ul.append(li);
             }
             list.append(ul);
