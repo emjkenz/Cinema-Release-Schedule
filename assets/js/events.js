@@ -2,8 +2,7 @@ var even = '';
 var allEvents = 'https://taskinoz.com/village/schedule';
 var events = [];
 function getEvents() {
-    $('#all-cinemas').html('<div class="loading">loading...</div>')
-    console.log("hello")
+    $('#all-events').html('<div class="loading">loading...</div>')
     $.ajax({
         url: allEvents,
         type: 'GET',
@@ -15,27 +14,27 @@ function getEvents() {
 
             for (let i = 0; i < events.Items.length; i++) {
                 var event = events.Items[i];
-                //var sessions = event.Sessions;
-                var times = "";
-                console.log(times);
-                // for (let j = 0; j < sessions.length; j++) {
-                //     var session = sessions[j];
-                //     times += '<span>' + dayjs(session.ShowDateTime).format("ddd hh:mm a") + '</span>\n';
-                // }
+                var genere = event.Genres?.[0]?.Name ? '<p class="event-genre">' + event.Genres?.[0]?.Name  + '</p>' : "";
+
                 var div = $(
                     '<div class="event">' +
-                    '<div class="event-image">' +
-                    '<img src="' + (event.GraphicUrl?? "../assets/images/download.png") + '">' +
-                    '</div>' +
-                    '<div class="event-info">' +
-                    '<h3 class="event-title">' + event.Title + '</h3>' +
-                    '<p class="event-rating">Rating: ' + event.Rating + '</p>' +
-                    //'<p class="event-genre">' + event.Genres[0].Name + '</p>' +
-                    '<p class="event-duration">' + event.Runtime + ' minutes</p>' +
-                    '<div class="movie-sessions">' +
-                    times +
-                    '</div>' +
-                    '</div>' +
+                        '<div class="event-image">' +
+                            '<img src="' + (event.GraphicUrl ?? "../assets/images/poster-not-found.png") + '">' +
+                        '</div>' +
+                        '<div class="event-info">' +
+                            '<h3 class="event-title">' + event.Title + '</h3>' +
+                            '<p class="event-description">' + truncate(event.Synopsis, 200) + '</p>' +
+                            '<p class="event-rating">Rating: ' + event.Rating + '</p>' +
+                            genere +
+                            '<p class="event-duration">' + event.Runtime + ' minutes</p>' +
+                            '<div class="book-container">'+
+                                '<a href="https://villagecinemas.com.au'+event.PageUrl+'" '+
+                                    'class="btn waves-effect waves-light book-button" '+
+                                    'target="_blank" rel="noreferrer nofollow">'+
+                                    'Book Now <i class="material-icons left">local_activity</i>'+
+                                '</a>'+
+                            '</div>'+
+                        '</div>' +
                     '</div>'
                 );
                 list.append(div);
@@ -47,6 +46,10 @@ function getEvents() {
             console.log(data);
         }
     });
+}
+
+function truncate(text, length) {
+    return text.length > length ? text.slice(0, length)+"..." : text
 }
 $(document).ready(function () {
     getEvents()
