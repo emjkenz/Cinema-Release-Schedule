@@ -15,7 +15,7 @@ function getMovieCinemas() {
             var ul = $('<ul></ul>');
             for (let i = 0; i < cinemas.Items.length; i++) {
                 const cinema = cinemas.Items[i];
-                var li = $('<li><span>' + cinema.DisplayName + '</span><a class="search-cinema" href="./moviesearch/?cinemaId=' + cinema.CinemaId + '&cinemaName=' + cinema.DisplayName + '">View ></a></li>');
+                var li = $('<li><a href="./moviesearch/?cinemaId=' + cinema.CinemaId + '&cinemaName=' + cinema.DisplayName + '"><span>' + cinema.DisplayName + '</span></li>');
                 ul.append(li);
                 // provides the means to disseminate detailed information about cinema names, id's and other data via this API to the rest of the website and is the cornerstone of our cinema and movie search function.
             }
