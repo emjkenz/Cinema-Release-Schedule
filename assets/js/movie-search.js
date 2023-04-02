@@ -27,18 +27,25 @@ function getMoviesFromCinema(cinemaId) {
                 }
                 var div = $(
                     '<div class="movie">' +
-                    '<div class="movie-image">' +
-                    '<img src="' + movie.GraphicUrl + '">' +
-                    '</div>' +
-                    '<div class="movie-info">' +
-                    '<h3 class="movie-title">' + movie.Title + '</h3>' +
-                    '<p class="movie-rating">Rating: ' + movie.Rating + '</p>' +
-                    '<p class="movie-genre">' + movie.Genres[0].Name + '</p>' +
-                    '<p class="movie-duration">' + movie.Runtime + ' minutes</p>' +
-                    '<div class="movie-sessions">' +
-                    times +
-                    '</div>' +
-                    '</div>' +
+                        '<div class="movie-image">' +
+                            '<img src="' + movie.GraphicUrl + '">' +
+                        '</div>' +
+                        '<div class="movie-info">' +
+                            '<h3 class="movie-title">' + movie.Title + '</h3>' +
+                            '<p class="movie-rating">Rating: ' + movie.Rating + '</p>' +
+                            '<p class="movie-genre">' + movie.Genres[0].Name + '</p>' +
+                            '<p class="movie-duration">' + movie.Runtime + ' minutes</p>' +
+                            '<div class="movie-sessions">' +
+                                times +
+                            '</div>' +
+                            '<div class="book-container">'+
+                                '<a href="https://villagecinemas.com.au'+movie.PageUrl+'" '+
+                                    'class="btn waves-effect waves-light book-button" '+
+                                    'target="_blank" rel="noreferrer nofollow">'+
+                                    'Book Now <i class="material-icons left">local_activity</i>'+
+                                '</a>'+
+                            '</div>'+
+                        '</div>' +
                     '</div>'
                 );
                 list.append(div);
