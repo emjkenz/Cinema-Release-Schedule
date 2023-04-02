@@ -20,6 +20,10 @@ html {
   background: linear-gradient(to right, #d500f9, #1de9b6);
   text-shadow: black 1px 1px;
 }
+nav {
+  position: relative;
+  z-index: 100;
+}
 
 nav ul a {
   font-size: 1.5rem;
@@ -50,21 +54,11 @@ h1 {
   }
 }
 
-.carousel {
-  height: 100% !important;
-}
-
-.carousel-item {
-  width: 400px !important;
-  height: 400px !important;
-}
-
 .carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  z-index: 1;
   font-size: 48px;
   /* Increase the font size to make the arrows bigger */
   color: rgba(0, 0, 0, 0.6);
@@ -213,6 +207,13 @@ body>.container {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 500px) {
+  .movie, 
+  .event {
+    width: 100%;
+  }
+}
+
 .movie-image img,
 .event img {
   width: 100%;
@@ -239,6 +240,7 @@ body>.container {
   justify-content: center;
   align-items: center;
   padding: 100px;
+  padding-bottom: 1000px;
 }
 
 .colorbox {
