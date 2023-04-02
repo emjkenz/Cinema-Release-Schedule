@@ -1,6 +1,9 @@
 * {
   font-family: 'Bebas Neue', cursive;
 }
+html {
+  background: linear-gradient(to bottom, #89bdf9, #9ef2fc);
+}
 
 .brand-logo,
 .brand-logo img {
@@ -115,10 +118,13 @@ p {
 .moreinfo {}
 
 body {
-  background: linear-gradient(to bottom, #89bdf9, #9ef2fc);
+  background:  url(../images/film\ tape\ 2.png);
   background-repeat: no-repeat;
   min-height: 100vh;
+  background-position: 100% 200px;
+  background-size: cover;
 }
+
 
 body>.container {
   min-height: 80vh;
@@ -212,4 +218,9 @@ body>.container {
   justify-content: center;
   align-items: center;
   padding: 100px;
+}
+
+.colorbox {
+  background: rgba(137,186,249,0.7);
+  padding: 20px;
 }
