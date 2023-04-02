@@ -25,6 +25,8 @@ nav ul a {
 h1 {
   text-transform: uppercase;
   font-family: 'Monoton', cursive;
+  color: #fff;
+  text-shadow: 1px 1px 9px #000;
 }
 
 @media screen and (min-width:500px) {
@@ -98,21 +100,19 @@ p {
   height: 100%;
   display: inline-block;
   vertical-align: middle;
-  color: rgba(0, 0, 0, 0.5);
+  color: #ccc;
+  text-shadow: 1px 1px 2px rgba(0,0,0, 0.5);
 }
 
 .breadcrumb:before {
   vertical-align: middle;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 2px rgba(0,0,0, 0.5);
 }
 
 .breadcrumb:last-child {
-  color: #000;
+  color: #fff;
 }
-
-.website-use {}
-
-.moreinfo {}
 
 body {
   background: linear-gradient(to bottom, #89bdf9, #9ef2fc);
@@ -150,22 +150,35 @@ body>.container {
   }
 }
 
+/* Search Bar */
+#movie-search,
+#cinema-search {
+  background: #fff;
+  padding: 0 10px;
+}
+
+.btn {
+  text-shadow: 1px 1px #000;
+}
+
 #all-cinemas ul {
   width: 100%;
 }
 
 #all-cinemas li {
   display: flex;
-  justify-content: space-between;
-  background-color: rgb(73, 86, 161);
+  background-color: #4956a1;
   margin: 5px 0;
-  padding: 10px;
   color: #fff;
   font-size: 1.5rem;
 }
 
 #all-cinemas li a {
-  display: inline-block;
+  /* display: flex; */
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  justify-content: space-between;
   color: #fff;
   transition: 0.3s;
   vertical-align: middle;
@@ -173,7 +186,7 @@ body>.container {
 }
 
 #all-cinemas li a:hover {
-  background-color: #000;
+  background-color: #343d6f;
   vertical-align: middle;
 }
 
