@@ -29,7 +29,7 @@ function getMovieCinemas() {
 }
 function searchCinemas() {
     var search = $('#cinema-search').val();
-    $('#cinema-list ul li').each(function () {
+    $('#cinema-list ul li a').each(function () {
         if ($(this).children('span').text().toLowerCase().indexOf(search.toLowerCase()) == -1 && search !== "") {
             $(this).hide();
         } else {
