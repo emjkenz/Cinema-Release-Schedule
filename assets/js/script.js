@@ -72,7 +72,7 @@ async function loadCarousel() {
 
       carouselItem.addEventListener("click", () => {
         localStorage.setItem("selectedFilm", JSON.stringify(film));
-        window.location.href = "/detailpage";
+        window.location.href = "./detailpage";
       });
     });
 
