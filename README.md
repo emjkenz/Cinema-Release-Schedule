@@ -1,133 +1,124 @@
-# 08 Project 1: Interactive Front-End Application
-GROUP 3: Chris Grace, David Chen + Emily Kennedy
+# Movie Tracker Website
 
-At the conclusion of each phase of this course, you’ll work with a group of your fellow students to create a **project**. A project is collaborative work among a group of developers to create an application that solves a real-world problem. Projects model the experience you’ll encounter in every development role at any company, from large multinational businesses to small startups. Coding is collaborative.
+A movie tracker website project that allows users to browse currently playing movies, view detailed information about movies and events, and find nearby cinemas. This project utilizes external APIs to fetch movie and cinema information.
 
-A project is a bit different from the Challenge assignments you’ve worked on so far. One of the biggest differences is that you’ll no longer build an application by yourself! This has some advantages&mdash;you won’t have to do all of the work, you can divide up duties, and you can share skills and knowledge with other developers and lean on their strengths. This can also be challenging if you’re used to working alone. Constant communication and time management are just two of the skills you’ll need to practice to make sure everyone in your group works together to complete the project. 
+## Table of Contents
 
-Projects won’t provide you with a user story or acceptance criteria, because you and your group will create them once you decide which real-world problem your application will solve. This lack of constraints can be freeing in a way, because you have room to build what you want, but it also means that you have to decide what those constraints are before you can start working.
+1. [User Stories and Acceptance Criteria](#user-stories-and-acceptance-criteria)
+2. [Installation and Setup](#installation-and-setup)
+3. [Mock-Up](#mock-up)
+4. [API Documentation](#api-documentation)
+5. [License](#license)
+6. [Acknowledgements](#acknowledgements)
 
-Finally, a project requires a presentation, because you’re trying to convince an audience that it serves a purpose. Your instructional staff and fellow students are investors, and you’re pitching your creation to them&mdash;an experience that developers are required to do frequently. Your presentation is just as important as the actual project, so take it just as seriously.
+## User Stories and Acceptance Criteria
 
-## Project Requirements
+### User Story:
 
-You and your group will use everything you’ve learned over the past six modules to create a real-world front-end application that you’ll be able to showcase to potential employers. The user story and acceptance criteria will depend on the project that you create, but your project must fulfil the following requirements:
+```
+As a movie enthusiast, I want to be able to browse currently playing movies, view detailed information about movies and events, and find nearby cinemas, so that I can easily plan my movie-watching experience.
+```
 
-* Use a CSS framework other than Bootstrap.
+### Acceptance Criteria：
 
-* Be deployed to GitHub Pages.
+```
+- SCENARIO: A user wants to browse the most popular movies currently showing in cinemas.
 
-* Be interactive (i.e., accept and respond to user input).
+  - Given the user is on the HOME page,
+  - When the user views the movie carousel,
+  - Then the user should see a list of movies currently showing in cinemas with their respective posters.
 
-* Use at least two [server-side APIs](https://coding-boot-camp.github.io/full-stack/apis/api-resources).
+- SCENARIO: A user wants to view more information about a specific movie.
 
-* Does not use alerts, confirms, or prompts (use modals).
+  - Given the user is on the HOME page and sees the movie carousel,
+  - When the user clicks on a movie poster,
+  - Then the user should be taken to a detail page displaying more information about the selected movie.
 
-* Use client-side storage to store persistent data.
+- SCENARIO: A user wants to filter movies by cinema location.
 
-* Be responsive.
+  - Given the user is on the CINEMA SEARCH page,
+  - When the user selects a cinema location from a menu lsit,
+  - Then the user should see only movies currently showing in the selected cinema location.
 
-* Have a polished UI.
+- SCENARIO: A user wants to view movie showtimes for a specific cinema.
 
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
+  - Given the user is on the cinema's movie listing page,
+  - When the user views the movie list,
+  - Then the user should see the showtimes for each movie at the selected cinema.
 
-* Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
+- SCENARIO: A user wants to book tickets for a movie.
 
-## Presentation Requirements
+  - Given the user is on the EVENTS page or movie listing page,
+  - When the user clicks on the "Book Now" button,
+  - Then the user should be redirected to an external booking website to complete their purchase.
+```
 
-Use this [project presentation template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing) to address the following: 
+## Installation and Setup
 
-* Elevator pitch: a one minute description of your application
+You can visit the Movie Tracker website by cloning the repository to your local computer and open the index.html file.
 
-* Concept: What is your user story? What was your motivation for development?
+## Mock-Up
 
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
+**Browse movies:**
 
-* Demo: Show your stuff!
+Upon visiting the homepage, users will see a carousel displaying posters of recommended popular movies currently showing in cinemas. Users can wait for it to auto-scroll.
+![Homepage GIF](assets/images/Home-page.gif)
 
-* Directions for Future Development
+**View movie details:**
 
-* Links to the deployed application and the GitHub repository
+To view more information about a recommended movie on the home page, users can click on a movie poster in the carousel. This will take them to the movie detail page, where they can find a synopsis, age rating, trailer and other relevant information.
+![Movie Detail GIF](assets/images/Movie-detail.gif)
 
-## Grading Requirements
+**Browse movies now showing:**
 
-> **Note**: If a project submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+Users can browse all movies that are currently streaming on screen by clicking the "EVENTS" button on nar bar.
 
-This project is graded based on the following criteria:
+This will take them to the events page, where they can scroll down the screen to view all listed movies.
+![Movie Showing Now](assets/images/movie-now-showing.gif)
 
-### Technical Acceptance Criteria: 25%
+**Select cinema by location:**
 
-* Satisfies the following code requirements:
+Users can selecte a cinema by location from a menu list which contains all cinemas or by searching for a specifc localtion using the search bar.
 
-  * Application uses at least two [server-side APIs](https://coding-boot-camp.github.io/full-stack/apis/api-resources)
+After selecting a location, only the movies currently playing at the chosen cinema will be shown.
+![Select Cinema](assets/images/select-cinema.gif)
+![Search Cinema](assets/images/search-cinema.gif)
 
-  * Application uses client-side storage to store persistent data.
+**Search for movies:**
 
-  * Application doesn't use JS alerts, prompts, or confirms (uses modals instead).
+Users can search for specific movies that are currently showing on the selected ceinema by typing a movie title into the search bar located at the top of the page.
 
-  * Application uses a CSS framework other than Bootstrap.
+As they type, the list of movies will be filtered to display only the matching titles.
+![Search Movie](assets/images/search-movie.gif)
 
-  * Application is interactive (accepts and responds to user input)
+**Check showtimes:**
 
-### Concept 10%
+On cinema's movie listing page, users can view the showtimes for each movie at the selected cinema.
 
-* Application should be a unique and novel idea.
+The showtimes will be displayed alongside the movie title and other details.
+![Check Showtime](assets/images/check-showtime.gif)
 
-* Your group should clearly and concisely articulate your project idea.
+**Book tickets:**
 
-### Deployment: 20%
+Users can book tickets for a movie by clicking on the "Book Now" button on the movie detail page or the movie listing page. This will redirect them to an external booking website where they can complete their purchase.
+![Book Ticket](assets/images/book-ticket.gif)
 
-* Application deployed at live URL and loads with no errors.
+**Navigation:**
 
-* Application GitHub URL submitted.
+The website also features a side navigation menu for narrow screen , which can be accessed by clicking on the menu icon in the top left corner.
 
-### Repository Quality: 10%
+This menu provides links to different sections of the website, such as the homepage, the cinema listing, and the movie listing.
+![Side Nav Bar](assets/images/navigation.gif)
 
-* Repository has a unique name.
+## API Documentation
 
-* Repository follows best practices for file structure and naming conventions.
+This project uses the Village Cinema API and MovieGlu API to fetch movie information. To learn more about the API, please visit the [MovieGlu API documentation](https://developer.movieglu.com/documentation/).
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+## License
 
-* Repository contains multiple descriptive commit messages.
+Include the appropriate license information for your project, such as MIT or GPL.
 
-* Repository contains a quality README file with description, screenshot, and link to deployed application.
+## Acknowledgements
 
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application is responsive.
-
-### Presentation 10%
-
-* Your group should present using a slide deck.
-
-* Every group member should speak during the presentation.
-
-* Your presentation should follow the [Project Presentation Template](https://docs.google.com/presentation/d/10QaO9KH8HtUXj__81ve0SZcpO5DbMbqqQr4iPpbwKks/edit?usp=sharing).
-
-### Collaboration 10%
-
-* There are no major disparities in the number of GitHub contributions between group members.
-
-## How to Submit Your Interactive Front-End Project
-
-**Each member of your group** is required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README describing the project.
-
----
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+- Movie data provided by the Village Cinema API and [MovieGlu API](https://www.movieglu.com/).
+- Carousel functionality implemented using [MaterializeCSS](https://materializecss.com/).
