@@ -110,7 +110,7 @@ function carouselNext() {
   carouselInstance.next();
 }
 
-if (window.location.pathname === "/" || window.location.pathname === "/Cinema-Release-Schedule/") {
+if (window.location.pathname === "/" || window.location.pathname === "/My-Movie-Search/") {
   document.addEventListener("DOMContentLoaded", loadCarousel);
 
   //Carousel auto feature
