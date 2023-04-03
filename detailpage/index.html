@@ -1,84 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Details</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Movie Details</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Import Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/movie-details.js"></script>
+  </head>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <!-- Import Materialize JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="../assets/js/script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <script src="../assets/js/movie-details.js"></script>
-</head>
-
-<body>
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="nav-wrapper">
-      <a href="../" class="brand-logo"><img src="../assets/images/movie-search-logo.png" alt="My Movie Search" /></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="../">Home</a></li>
-        <li><a href="../events">Events</a></li>
-        <li><a href="../cinemasearch">Cinema Search</a></li>
-        <li><a href="../detailpage">Movie Details</a></li>
-        <li><a href="../about/">About</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!--Mobile compatability-->
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="../">Home</a></li>
-    <li><a href="../events">Events</a></li>  
-    <li><a href="../cinemasearch">Cinema Search</a></li>
-    <li><a href="../detailpage">Movie Details</a></li>
-    <li><a href="../about/">About</a></li>
-  </ul>
-
-  <div class="container">
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-      <div class="col s12">
-        <a href="../" class="breadcrumb">Home</a>
-        <a href="./" class="breadcrumb">Movie Details</a>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="nav-wrapper">
+        <a href="../" class="brand-logo"
+          ><img
+            src="../assets/images/movie-search-logo.png"
+            alt="My Movie Search"
+        /></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="../">Home</a></li>
+          <li><a href="../events">Events</a></li>
+          <li><a href="../cinemasearch">Cinema Search</a></li>
+          <li><a href="../detailpage">Movie Details</a></li>
+          <li><a href="../about/">About</a></li>
+        </ul>
       </div>
-    </div>
-    <h1>Movie Details</h1>
-    <div class="row">
-      <div class="col s12">
-        <h2 id="movie-name"></h2>
+    </nav>
+
+    <!--Mobile compatability-->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../">Home</a></li>
+      <li><a href="../events">Events</a></li>
+      <li><a href="../cinemasearch">Cinema Search</a></li>
+      <li><a href="../detailpage">Movie Details</a></li>
+      <li><a href="../about/">About</a></li>
+    </ul>
+
+    <div class="container">
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <div class="col s12">
+          <a href="../" class="breadcrumb">Home</a>
+          <a href="./" class="breadcrumb">Movie Details</a>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col m4 s12">
-        <img id="movie-poster" src="" alt="" />
+      <h1>Movie Details</h1>
+      <div class="row">
+        <div class="col s12">
+          <h2 id="movie-name"></h2>
+        </div>
       </div>
-      <div class="col m8 s12">
-        <div class="colorbox">
-          <p id="age-rating"></p>
-          <p id="synopsis"></p>
+      <div class="row">
+        <div class="col m4 s12">
+          <img id="movie-poster" src="" alt="" />
+        </div>
+        <div class="col m8 s12">
+          <div class="colorbox">
+            <p id="age-rating"></p>
+            <p id="synopsis"></p>
+          </div>
+
+          <video id="movie-trailer" controls>
+            <source src="" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
-  </div>
 
-  <footer class="page-footer">
-    <div class="footer-copyright">
-      <div class="container center-align">
-        © <span id="copyright-date"></span> The Movie Buffs
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container center-align">
+          © <span id="copyright-date"></span> The Movie Buffs
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

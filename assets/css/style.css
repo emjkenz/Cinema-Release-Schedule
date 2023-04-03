@@ -1,5 +1,5 @@
 * {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 }
 html {
   background: linear-gradient(to bottom, #89bdf9, #9ef2fc);
@@ -10,8 +10,7 @@ html {
   height: 100%;
 }
 
-
-.sidenav li>a {
+.sidenav li > a {
   color: #fff;
 }
 
@@ -20,9 +19,10 @@ html {
   background: linear-gradient(to right, #d500f9, #1de9b6);
   text-shadow: black 1px 1px;
 }
+
 nav {
   position: relative;
-  z-index: 100;
+  z-index: 2;
 }
 
 nav ul a {
@@ -31,17 +31,17 @@ nav ul a {
 
 h1 {
   text-transform: uppercase;
-  font-family: 'Monoton', cursive;
+  font-family: "Monoton", cursive;
   color: #fff;
   text-shadow: 1px 1px 9px #000;
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width: 500px) {
   .carousel-container {
     position: relative;
     top: -200px;
     height: 100vh !important;
-    z-index: -1;
+    z-index: 1;
   }
 
   .carousel {
@@ -76,10 +76,7 @@ h1 {
 }
 
 .carousel:hover .carousel-control {
-  color: rgba(0,
-      0,
-      0,
-      0.8);
+  color: rgba(0, 0, 0, 0.8);
   /* Adjust the color on hover for better visibility */
 }
 
@@ -98,13 +95,13 @@ p {
   display: inline-block;
   vertical-align: middle;
   color: #ccc;
-  text-shadow: 1px 1px 2px rgba(0,0,0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .breadcrumb:before {
   vertical-align: middle;
   color: rgba(255, 255, 255, 0.5);
-  text-shadow: 1px 1px 2px rgba(0,0,0, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .breadcrumb:last-child {
@@ -112,15 +109,14 @@ p {
 }
 
 body {
-  background:  url(../images/film\ tape\ 2.png);
+  background: url(../images/film\ tape\ 2.png);
   background-repeat: no-repeat;
   min-height: 100vh;
   background-position: 100% 200px;
   background-size: cover;
 }
 
-
-body>.container {
+body > .container {
   min-height: 80vh;
 }
 
@@ -143,7 +139,7 @@ body>.container {
   text-align: center;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
   .center-image {
     width: 100%;
     height: unset !important;
@@ -208,7 +204,7 @@ body>.container {
 }
 
 @media screen and (max-width: 500px) {
-  .movie, 
+  .movie,
   .event {
     width: 100%;
   }
@@ -244,6 +240,6 @@ body>.container {
 }
 
 .colorbox {
-  background: rgba(137,186,249,0.7);
+  background: rgba(137, 186, 249, 0.7);
   padding: 20px;
 }
