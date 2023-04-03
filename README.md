@@ -2,6 +2,8 @@
 
 A movie tracker website project that allows users to browse currently playing movies, view detailed information about movies and events, and find nearby cinemas. This project utilizes external APIs to fetch movie and cinema information.
 
+You can find URL [here](https://emjkenz.github.io/My-Movie-Search/)
+
 ## Table of Contents
 
 1. [User Stories and Acceptance Criteria](#user-stories-and-acceptance-criteria)
