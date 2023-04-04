@@ -17,7 +17,7 @@ You can find URL [here](https://emjkenz.github.io/My-Movie-Search/)
 ### User Story:
 
 ```
-As a movie enthusiast, I want to access to movie releases and their cinema locations, so that I can watch my desired movie near me.
+As a movie enthusiast, I want access to movie releases and their cinema locations, so that I can watch my desired movie near me.
 ```
 
 ### Acceptance Criteria：
