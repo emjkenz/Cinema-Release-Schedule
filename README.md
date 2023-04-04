@@ -10,8 +10,7 @@ You can find URL [here](https://emjkenz.github.io/My-Movie-Search/)
 2. [Installation and Setup](#installation-and-setup)
 3. [Mock-Up](#mock-up)
 4. [API Documentation](#api-documentation)
-5. [License](#license)
-6. [Acknowledgements](#acknowledgements)
+5. [Acknowledgements](#acknowledgements)
 
 ## User Stories and Acceptance Criteria
 
