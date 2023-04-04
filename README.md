@@ -18,13 +18,13 @@ You can find URL [here](https://emjkenz.github.io/My-Movie-Search/)
 ### User Story:
 
 ```
-As a movie enthusiast, I want to be able to browse currently playing movies, view detailed information about movies and events, and find nearby cinemas, so that I can easily plan my movie-watching experience.
+As a movie enthusiast, I want to access to movie releases and their cinema locations, so that I can watch my desired movie near me.
 ```
 
 ### Acceptance Criteria：
 
 ```
-- SCENARIO: A user wants to browse the most popular movies currently showing in cinemas.
+- SCENARIO: A user wants to browse popular movies currently showing in cinemas.
 
   - Given the user is on the HOME page,
   - When the user views the movie carousel,
@@ -63,7 +63,7 @@ You can visit the Movie Tracker website by cloning the repository to your local 
 
 **Browse movies:**
 
-Upon visiting the homepage, users will see a carousel displaying posters of recommended popular movies currently showing in cinemas. Users can wait for it to auto-scroll.
+Upon visiting the homepage, users will see a carousel displaying posters of recommended movies currently showing in cinemas. Users can wait for it to auto-scroll.
 ![Homepage GIF](assets/images/Home-page.gif)
 
 **View movie details:**
@@ -73,14 +73,14 @@ To view more information about a recommended movie on the home page, users can c
 
 **Browse movies now showing:**
 
-Users can browse all movies that are currently streaming on screen by clicking the "EVENTS" button on nar bar.
+Users can browse current movie events by clicking the "EVENTS" button on nav bar.
 
-This will take them to the events page, where they can scroll down the screen to view all listed movies.
+This will take them to the events page, where they can view upcoming movie events such as double features and movie marathons.
 ![Movie Showing Now](assets/images/movie-now-showing.gif)
 
 **Select cinema by location:**
 
-Users can selecte a cinema by location from a menu list which contains all cinemas or by searching for a specifc localtion using the search bar.
+Users can select a cinema location from either scrolling a menu list of cinemas or by searching for a specifc location using the search bar.
 
 After selecting a location, only the movies currently playing at the chosen cinema will be shown.
 ![Select Cinema](assets/images/select-cinema.gif)
@@ -88,7 +88,7 @@ After selecting a location, only the movies currently playing at the chosen cine
 
 **Search for movies:**
 
-Users can search for specific movies that are currently showing on the selected ceinema by typing a movie title into the search bar located at the top of the page.
+Users can search for specific movies that are currently screening on the selected cinema by typing a movie title into the search bar located at the top of the page.
 
 As they type, the list of movies will be filtered to display only the matching titles.
 ![Search Movie](assets/images/search-movie.gif)
@@ -102,7 +102,7 @@ The showtimes will be displayed alongside the movie title and other details.
 
 **Book tickets:**
 
-Users can book tickets for a movie by clicking on the "Book Now" button on the movie detail page or the movie listing page. This will redirect them to an external booking website where they can complete their purchase.
+Users can book tickets for a movie by clicking on the "Book Now" button on the movie search once cinema location is selected. This will redirect them to an external booking website where they can complete their purchase.
 ![Book Ticket](assets/images/book-ticket.gif)
 
 **Navigation:**
@@ -115,10 +115,6 @@ This menu provides links to different sections of the website, such as the homep
 ## API Documentation
 
 This project uses the Village Cinema API and MovieGlu API to fetch movie information. To learn more about the API, please visit the [MovieGlu API documentation](https://developer.movieglu.com/documentation/).
-
-## License
-
-Include the appropriate license information for your project, such as MIT or GPL.
 
 ## Acknowledgements
 
