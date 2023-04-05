@@ -10,15 +10,14 @@ You can find URL [here](https://emjkenz.github.io/My-Movie-Search/)
 2. [Installation and Setup](#installation-and-setup)
 3. [Mock-Up](#mock-up)
 4. [API Documentation](#api-documentation)
-5. [License](#license)
-6. [Acknowledgements](#acknowledgements)
+5. [Acknowledgements](#acknowledgements)
 
 ## User Stories and Acceptance Criteria
 
 ### User Story:
 
 ```
-As a movie enthusiast, I want to access to movie releases and their cinema locations, so that I can watch my desired movie near me.
+As a movie enthusiast, I want access to movie releases and their cinema locations, so that I can watch my desired movie near me.
 ```
 
 ### Acceptance Criteria：
